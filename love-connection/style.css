@@ -1,0 +1,53 @@
+body{
+    background-image: url("white-hearts.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+header{
+    text-align: center;
+    
+}
+.company{
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(135, 11, 34);
+}
+p{
+    border:2px solid lightgrey;
+    padding:20px;
+    width:600px;
+    height:120px;
+    background-color: white;
+    object-fit: cover;
+    border-radius:10px;
+    text-align: center;
+          
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+
+}
+.like-button{
+    height:100px;
+   
+    
+}
+.button{
+    width:600px;
+    height: 75px;
+    background-color:rgb(135, 11, 34);
+    font-size: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    
+  
+}
+button:hover {
+    background-color: red;
+    color: white;
+  }

@@ -1,0 +1,267 @@
+
+body{
+    background-color: #ECBA82;
+    background-image: url("pattern.png");
+    color: #51513D;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:0;
+}
+.tesla{
+    max-width: auto;
+    max-height: 300px;
+    display:flex;
+    border-radius:50%;
+    border: 5px solid #540B0E;
+    margin:30px;
+}
+.tesla:hover {
+    transform: scaleX(-1) scale(1);
+}
+.title{
+    font-size: 50px;
+    background-image: url("lightening.gif");
+    display:flex;
+    color:white;
+    border:solid 5px black;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+
+}
+.nikola{
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    width:75%;
+}
+q{
+    font-size: 30px;
+    margin:auto;
+    justify-content: center;
+    width:25%;
+    
+}
+
+.quote{
+    width: 100%;
+    height: fit-content;
+    margin: 40px;
+    display:flex;
+    justify-content: center;
+    color:#540B0E;
+    font-size: 25px;
+}
+
+aside {
+    
+    width: 100%;
+    height: fit-content;
+    margin: 70px 0;
+    display:flex;
+    color:#540B0E;
+    font-size: 20px;
+   }
+
+
+.underTop{
+    
+    display:flex;
+}
+    
+
+.topContainer{
+    width:75%;
+    display:flex;
+    margin: auto;
+}
+.timeTitle{
+    width:75%;
+    display:flex;
+    margin: auto;
+    color:#540B0E;
+    font-size: 50px;
+
+}
+.timeline{
+    width:75%;
+    display:flex;
+    margin: auto;
+    flex-wrap: wrap;
+    
+
+}
+
+.date{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: italic;
+    background-image: url("light.jpg");
+    width:100%;
+}
+p{
+   
+    color: #51513D;
+    display:flex;
+    margin: auto;
+    font-size: 20px;
+}
+
+.bottom{
+    width: 75%;
+    height:auto;
+    display:flex;
+    margin: auto;
+    justify-content: space-evenly;
+    background-image: url("light.jpg");
+    color:white;
+}
+a{
+    color:white
+
+}
+a:visited{
+    color:lightgrey;
+}
+.links{
+    width:75%;
+    display:flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    width: 400px;
+    font-size: 20px;
+}
+footer{
+    width:75%;
+    display:flex;
+    margin: auto;
+    font-size: 20px;
+    height: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.foot{
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+/* Media Queries for Tablets */
+@media screen and (min-width: 481)and(max-width: 998px) {
+    .tesla {
+        max-height: 200px; 
+    }
+
+    .title {
+        font-size: 40px; 
+    }
+
+    .nikola {
+        width: 100%; 
+    }
+
+    q {
+        font-size: 25px; 
+        width: 100%; 
+    }
+    .foot{
+        width:100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .links{
+        width:100%;
+        height:auto;
+        flex-wrap: wrap;
+    }
+    .footer{
+        width:100%;
+        flex-wrap: wrap;
+    }
+    .bottom{
+        width:100%;
+    }
+
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 480px) {
+    .topContainer{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .title {
+        font-size: 30px;
+        width:100%;
+        display:flex;
+        border:none;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        background-image: none; 
+        color:black ;
+      
+       
+    }
+    .underTop{
+        display:block;
+
+    }    
+    .nikola {
+        width: 100%; 
+        display: block;
+        margin:0 auto;
+    }
+    .n {
+        
+        width:100%;
+        display: block;
+    }
+
+    .aside {
+        font-size: 16px; 
+        width:100%;
+        display: block;
+    }
+
+    .quote {
+        font-size: 25px; 
+        width:100%;
+        margin: 0;
+        display: block;
+    }
+
+
+    .foot{
+        width:100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .links {
+        width: 100%; 
+        height:auto;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer{
+        width:100%;
+        flex-wrap: wrap;
+        
+    }
+   
+    q{
+        font-size: 25px; 
+        width: 100%; 
+        text-align: center;
+       
+    }
+    .bottom{
+        width: 100%;
+        
+    }
+}
