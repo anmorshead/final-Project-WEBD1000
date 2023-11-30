@@ -1,24 +1,96 @@
-/* Add your styles here */
 body {
-    font-family: Arial, sans-serif;
+    background-image: url("polkadot.jpg");
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header, nav, section {
+header {
+    /*background-color: blue;*/
     margin: 20px;
+    text-align: center;
+}
+.navigation{
+   
+        /*background-color: blue;*/
+        margin: 20px;
+        text-align: center;
+        display: inline;
+        margin-right: 10px;
+    }
+    
+.about-me{
+    text-align: center;
+    background-color: bisque;
+    margin:20px;
+    padding:10px;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+.paragraph {
+    flex: 1; /* Allow the paragraph to grow and take available space */
+    /*background-color: pink;*/
+    margin:40px 20px;
+}
+
+.about-me-content {
+    display: flex; /* Apply flex to the wrapper of "About Me" and the paragraph */
+    /*background-color: green;*/
+    border-radius: 1%;
+    /*background-color: purple;*/
+}
+
+
+.workexamples {
+    margin: 20px;
+    background-color: bisque;
+    display: inline-flex;
+    width:100%;
+}
+.workexamples h2{
+    text-align: center;
+    margin:40px 20px;
+    width: 100%;
+}
+
+.chef {
+    float: left;
+    margin: 50px;
+    max-width: 500px;
+    border-radius: 10%;
+}
+
+
+nav {
+    /*background-color: blue;*/
+    margin: 20px;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
 }
 
 nav li {
     display: inline;
     margin-right: 10px;
+    /*background-color: pink;*/
 }
+nav li img {
+    width: 40px; /* Adjust the width of the icons */
+    height: 40px; /* Adjust the height of the icons */
+    margin: 0px; /* Adjust the spacing between the icon and text */
+    /*background-color: greenyellow;*/
+    
+}
+
 
 a {
     text-decoration: none;
@@ -29,3 +101,33 @@ a:hover {
     color: #666;
 }
 
+.causes {
+    margin: 20px;
+    /*background-color:whitesmoke;*/
+}
+.pdf-intro{
+    /*background-color: bisque;*/
+    justify-content: center;
+    text-align: center;
+    margin:20px;
+}
+.pdf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border:5px solid #333;
+    margin:20px;
+}
+
+.pdf object {
+    max-width: 50%;
+}
+
+.pdf p {
+    flex: 1;
+    color: black;
+    max-width: 50%;
+    margin:20px;
+}
