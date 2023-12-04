@@ -1,8 +1,10 @@
 body {
-    background-image: url("polkadot.jpg");
+    background-image: url("wood.jpg");
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
     margin: 0;
     padding: 0;
+   
 }
 
 header {
@@ -19,57 +21,65 @@ header {
         margin-right: 10px;
     }
     
-.about-me{
+#about-me{
     text-align: center;
-    background-color: bisque;
+    background-image: url("brush.png") ;
+    background-position: center;
+    background-size: cover;
+    color: antiquewhite;
     margin:20px;
     padding:10px;
+    
 }
 
 .container {
     margin: 20px;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: flex-start; /* Align items to the start (left) */
+  
+    
 }
+
+.chef {
+
+    margin: 20px 0 20px 20px;
+    max-width: 700px;
+    max-height: 350px;
+    border-radius: 10%;
+    object-fit: cover;
+    
+}
+
 .paragraph {
-    flex: 1; /* Allow the paragraph to grow and take available space */
-    /*background-color: pink;*/
-    margin:40px 20px;
-}
-
-.about-me-content {
-    display: flex; /* Apply flex to the wrapper of "About Me" and the paragraph */
-    /*background-color: green;*/
-    border-radius: 1%;
-    /*background-color: purple;*/
-}
-
-
-.workexamples {
+    flex: 1; 
     margin: 20px;
-    background-color: bisque;
+    font-size: 20px;
+    text-align: justify;
+ 
+}
+
+#workexamples {
+    margin: 20px;
+    background-image: url("brush.png") ;
+    background-position: center;
+    background-size: cover;
+    color: antiquewhite;
     display: inline-flex;
     width:100%;
 }
-.workexamples h2{
+#workexamples h2{
     text-align: center;
     margin:40px 20px;
     width: 100%;
 }
 
-.chef {
-    float: left;
-    margin: 50px;
-    max-width: 500px;
-    border-radius: 10%;
-}
 
 
 nav {
     /*background-color: blue;*/
     margin: 20px;
     text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -84,10 +94,9 @@ nav li {
     /*background-color: pink;*/
 }
 nav li img {
-    width: 40px; /* Adjust the width of the icons */
-    height: 40px; /* Adjust the height of the icons */
-    margin: 0px; /* Adjust the spacing between the icon and text */
-    /*background-color: greenyellow;*/
+    width: 40px; 
+    height: 40px; 
+    margin: 0px; 
     
 }
 
@@ -106,28 +115,155 @@ a:hover {
     /*background-color:whitesmoke;*/
 }
 .pdf-intro{
-    /*background-color: bisque;*/
+    background-image: url("brush.png") ;
+    background-position: center;
+    background-size: cover;
+    color: antiquewhite;
     justify-content: center;
     text-align: center;
     margin:20px;
+    padding:20px;
 }
-.pdf {
+#pdf {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    background-color: antiquewhite;
     border:5px solid #333;
     margin:20px;
 }
 
-.pdf object {
+#pdf object {
     max-width: 50%;
 }
 
-.pdf p {
+#pdf p {
     flex: 1;
     color: black;
     max-width: 50%;
     margin:20px;
+    font-size: 25px;
+}
+#skills{
+    margin:20px;
+   
+}
+#skills h2{
+    background-image: url("brush.png") ;
+    background-position: center;
+    background-size: cover;
+    color: antiquewhite;
+    justify-content: center;
+    text-align: center;
+    margin:20px 0 20px 0;
+    padding:20px;
+    
+}
+.new-skills {
+    background-color: antiquewhite;
+    margin:10% auto;
+    padding: 20px;
+    max-width: 60%;
+    text-align: center;
+    border-radius: 10%;
+    border: 5px solid black;
+
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around;
+}
+.new-skills h3{
+    text-align: center;
+}
+
+.new-skills li {
+    flex: 0 0 45%; /* Adjust the width of each item */
+    margin: 10px; /* Adjust the spacing between items */
+    text-align: center;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    font-size: 20px;
+}
+
+.new-skills li img {
+    margin-left: auto; /* Push the images to the right */
+    width:10%;
+    margin-bottom: 10%;
+}
+@media only screen and (max-width: 768px) {
+    /* Reset styles for header */
+    header {
+        text-align: center;
+        margin: 10px;
+    }
+
+    /* Stack navigation links */
+    .navigation {
+        display: block;
+        margin: 10px;
+        text-align: center;
+    }
+
+    /* Adjust styling for the chef image */
+    .chef {
+        margin: 0 auto; /* Center the image in mobile view */
+        max-width: 100%; /* Make the image responsive */
+    }
+
+    /* Adjust styling for the container */
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    /* Adjust styling for paragraphs */
+    .paragraph {
+        margin: 20px;
+        font-size: 16px; /* Decrease font size for better readability on small screens */
+    }
+
+    /* Stack work examples navigation */
+    #workexamples ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust styling for resume section */
+    #pdf {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pdf object {
+        max-width: 100%;
+    }
+
+    #pdf p {
+        max-width: 100%;
+    }
+
+    /* Adjust styling for skills section */
+    .new-skills {
+        max-width: 100%; /* Make the container full-width */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically */
+        align-items: center; /* Center skills horizontally */
+    }
+
+    .new-skills li {
+        flex: 0 0 100%; /* Make skills full-width */
+    }
+
+    .new-skills li img {
+        margin-left: 0; /* Reset margin for images */
+        width: 20%; /* Adjust image size for better visibility */
+        margin-bottom: 5%; /* Adjust margin for better spacing */
+    }
+
+
 }

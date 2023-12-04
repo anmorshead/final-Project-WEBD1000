@@ -11,36 +11,39 @@
     <header>
         <h1>Welcome to My Portfolio!</h1>
     </header>
+    <br><br><br>
     <nav>
         <a class = "navigation" href="#about-me">About Me</a>
-        <a class = "navigation" href="#resume">Resume</a>
-        <a class = "navigation" href="#causes">Causes I Care About</a>
-        <a class = "navigation" href="#work-samples">Work Samples</a>
-        <a class = "navigation" href="#new-skills">New Skills!</a>
+        <a class = "navigation" href="#pdf">Resume</a>
+        <a class = "navigation" href="http://127.0.0.1:5500/causes/causes.html">A Cause I Care About</a>
+        <a class = "navigation" href="#workexamples">Work Samples</a>
+        <a class = "navigation" href="#skills">New Skills!</a>
     </nav>
     <br><br><br><br><br><br>
-    <div class="about-me">
-    <h1>About Me</h1>
+    <div id="about-me">
+    <h2>About Me</h2>
     </div>
     <div class="container">
         
-        <div class="about-me-content">
             <div class="paragraph">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus libero non quidem cum cumque voluptatem dolor minima reiciendis, distinctio suscipit eius totam quas quam fugiat ad sit obcaecati nisi ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit...
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In commodi voluptatibus aut pariatur assumenda omnis quae sunt minus. Cupiditate, amet quaerat qui omnis consequatur sunt cumque quas mollitia facilis magni.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet possimus asperiores dolorum delectus ea recusandae debitis tenetur animi sint, soluta, itaque laborum! Aut eveniet id culpa quos eius earum suscipit!
-                </p>
+                <p>Born and raised in Halifax I always knew I wanted a fun job where I could express my creativity
+                    and flaunt my organizational skills. I decided to go to Culinary school to become a Pastry Chef. 
+                    My career as a Pastry Chef has taken me all over the world; from Ottawa to Germany, Vancouver
+                    to back home here in Halifax. I've had a great career and many wonderful experiences along the way.<bR><br>
+                    Unfortunately working in kitchens is no longer a viable career option, so my focus has turned to tech.
+                    A career in Tech will allow me to retain my creative edge while giving me a wider platform to show the world what I can do. </p>
             </div>
             <img class="chef" src="chef.jpg">
-        </div>
+            <div style="clear:right;"></div>
+        
     </div>
     <br><br><br><br><br><br><br><br><br>
-        <div class="workexamples">
+        <div id="workexamples">
         <h2>Here are some examples of my work in Website Design:</h2>
-        <br><br><br>
+        
         </div>
     
-
+        <br><br><br><Br><br><br>
     <nav>
         <ul>
             <li><a href="http://127.0.0.1:5500/love-connection/exercise2.html" target="_blank"> <img src="web.png">Dating Website</a></li>
@@ -52,20 +55,37 @@
     </nav>
     <br><br><br><br><br><br><br><br><br>
    
-    <h1 class="pdf-intro">Resume</h1>
-    <div class="pdf">
+    <h2 class="pdf-intro">Resume</h2>
+    <div id="pdf">
         <object data="Andrea-Morshead_Resume_2023.pdf" type="application/pdf" width="100%" height="500px">
           <p>Unable to display PDF file. <a href="Andrea-Morshead_Resume_2023.pdf">Download</a> instead.</p>
         </object>
-        <p>this is my resume....sfjkdfnjjhfjhfjfsdfbsjfbdjjsfbsdjb Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quis eveniet perspiciatis, odio alias officiis quaerat error nobis delectus exercitationem consequatur veniam placeat, aliquam accusantium tempore perferendis, veritatis ullam eligendi?</p>
+        <p>This is my resume from when I was a chef.  You'll notice there are some overlapping skills and 
+             abilities. This is because working in tech and working in a kitchen are actually quite similar 
+             when you break it down. Everyone completes their individual jobs to create one amazing meal for customers.
+             The same holds true when working on small pieces of code, that when put together makes something great!</p>
     </div>
     
     <br>
     <br>
 
-    <div>
-        <a class = "causes" href="causes/causes.html" target="_blank">Causes I Care About</a>
-        <br>
+
+        <div id="skills">
+            <h2>Skills</h2>
         </div>
+            <div class = "new-skills">
+            <h3>I've gained some new skills and learned to work with some new programs recently!</h3>
+            <br><br><br>
+            <div class="skills-container">
+            <ul>
+                <li id="sql">Microsoft SQL Server <img src="sql.png"></li>
+                <li id="html">HTML & CSS <img src="html.png"></li>
+                <li id="github">GitHub <img src="GitHub.png"></li>
+                <li id="js">JavaScript <img src="js.png"></li>
+            
+            </ul>
+        </div>
+        </div>
+    
 </body>
 </html>
