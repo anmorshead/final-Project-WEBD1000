@@ -221,8 +221,8 @@ a:hover {
 
     /* Adjust styling for paragraphs */
     .paragraph {
-        margin: 20px;
-        font-size: 16px; /* Decrease font size for better readability on small screens */
+        margin: 25px;
+        font-size: 20px; /* Decrease font size for better readability on small screens */
     }
 
     /* Stack work examples navigation */
