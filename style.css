@@ -21,7 +21,9 @@ header {
         margin-right: 10px;
     }
     
-#about-me{
+
+.brush-background{
+
     text-align: center;
     background-image: url("brush.png") ;
     background-position: center;
@@ -29,7 +31,6 @@ header {
     color: antiquewhite;
     margin:20px;
     padding:10px;
-    
 }
 
 .container {
@@ -58,21 +59,6 @@ header {
     padding:10px;
     border-radius: 5%;
  
-}
-
-#workexamples {
-    margin: 20px;
-    background-image: url("brush.png") ;
-    background-position: center;
-    background-size: cover;
-    color: antiquewhite;
-    display: inline-flex;
-    width:100%;
-}
-#workexamples h2{
-    text-align: center;
-    margin:40px 20px;
-    width: 100%;
 }
 
 
@@ -117,16 +103,7 @@ a:hover {
     margin: 20px;
     /*background-color:whitesmoke;*/
 }
-.pdf-intro{
-    background-image: url("brush.png") ;
-    background-position: center;
-    background-size: cover;
-    color: antiquewhite;
-    justify-content: center;
-    text-align: center;
-    margin:20px;
-    padding:20px;
-}
+
 #pdf {
     display: flex;
     flex-wrap: wrap;
@@ -270,6 +247,10 @@ a:hover {
         margin-left: 0; /* Reset margin for images */
         width: 20%; /* Adjust image size for better visibility */
         margin-bottom: 5%; /* Adjust margin for better spacing */
+    }
+    .brush-background {
+        margin: 10px;
+        padding: 10px;
     }
 
 
