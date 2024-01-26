@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js" defer></script>
+  <title>PROG1700 Andrea Morshead - Final Project</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Countries of the World!</h1>
+    <br><br><br>
+  <div class = "flexContainer">
+
+  <form>
+    <div class="listCountry">
+    <h3>Choose a Country from the list:</h3>
+    <select id="dropDown" ></select> 
+ 
+    </div>
+  
+  <div class="countryContainer">
+    <h3>Country info for:</h3>
+    <input id = "selectedCountry" type="text" >
+    </div>
+
+  </div>
+  <img id = "flag" src = "flags/Afghanistan.png"> 
+
+  <div id = "population">
+    <h3>Population:</h3>
+    <input id="populationInput" type="text" >
+
+  </div>
+<div class="area">
+    <h3>Area in:</h3>
+    
+    <div class="buttonContainer">
+    <input type="radio" name="miles/km" value="sqmiles" id="sqmilesRadio"/>Square Miles<br>
+    <input type="radio" name="miles/km" value="sqkms" id="sqkmRadio"/>Square KMs <br>
+  </div>
+  <input id = "areaText" type="text" >
+  </div>
+
+   <div class="popDensity">
+  <h3>Population Density:</h3>
+  <div class="buttonContainer">
+    <input type="radio" name="densemiles/km" value="dsqmiles" id="persqmile"/>Per Square Mile<br>
+    <input type="radio" name="densemiles/km" value="dsqkms" id="persqkm"/>Per Square KM <br>
+  </div>
+  <input id = "popText" type="text" >
+  </div>  
+
+  <div class="percentage">
+    <h3>Percentage of World's Population:</h3>
+    <input id = "percentageText" type="text" >
+
+<br><br><br><br>
+
+<a href="https://en.wikipedia.org/wiki/" class="button" id="wiki" target="_blank">
+  <button type="button">Country Wiki</button>
+</a>
+    <br><br><br>
+  </div>
+
+</form>
+</body>
+</html>

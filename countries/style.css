@@ -1,0 +1,130 @@
+body {
+    background-image: url("globe.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    background-color: whitesmoke;
+    text-align: center;
+    margin:10% 20%;
+    border-radius: 20px;
+    border: 5px solid black;
+    
+}
+
+.flexContainer {
+    background-color: none;
+}
+
+.listCountry {
+    margin-bottom: 70px;
+    margin-right: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    justify-content: space-between;
+   
+}
+#dropDown{
+    text-align: left;
+    background-color:white;
+    
+}
+
+.countryContainer {
+    margin-bottom: 70px;
+    display: inline-block;
+    vertical-align: top;
+    justify-content: space-between;
+}
+#selectedCountry{
+    width:100%;
+}
+.listCountry h3{
+    margin-top: 0;
+    
+}
+
+.countryContainer h3 {
+    margin-top: 0;
+   
+}
+.countryContainer input{
+    background-color: none;
+}
+#flag{
+    width: 70%;
+    height:auto;
+    margin:0;
+    border: 5px solid black;
+}
+#population{
+    text-align: left;
+    margin:0 15%;
+    width: 90%;
+    
+}
+.populationInput{
+    width: 60%;
+    text-align: left;
+}
+.area{
+    text-align: left;
+    margin:0 15%;
+    width: 90%;
+}
+.buttonContainer{
+    display: flex;
+}
+#areaText{
+    width: 60%;
+    text-align: left;
+    margin:2% 5% 0 0;
+}
+.popDensity{
+    text-align: left;
+    margin:0 15%;
+    width: 90%;
+    
+}
+#popText{
+    width: 60%;
+    text-align: left;
+    margin:2% 5% 0 0;
+}
+.percentage{
+    text-align: left;
+    margin:0 15%;
+    width: 90%;
+   
+}
+#percentageText{
+    width: 60%;
+    text-align: left;
+    margin:2% 5% 0 0;
+}
+@media screen and (max-width: 768px) {
+    .listCountry,
+    .countryContainer{
+        display: inline-block;
+        margin:20px;
+        text-align: left;
+        width:100%;
+    }
+    #selectedCountry{
+        width:80%;
+    }
+    .population,
+    .area,
+    .popDensity,
+    .percentage {
+        width: 100%;
+        margin-right: 0;
+        
+    }
+}
+
