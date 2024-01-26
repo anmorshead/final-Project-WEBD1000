@@ -5,23 +5,27 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+ 
 }
 
-header {
-   background-color: aliceblue;
-   opacity: .8;
+header img{
+  
+    width:100%;
+    object-fit: cover;
+    align-items: center;
     color: black;
-    margin: 20px;
+    margin: 20px auto;
     text-align: center;
 }
-.navigation{
-   
+nav{
+  
         color: aliceblue;
         margin: 20px;
         text-align: center;
         display: inline;
         margin-right: 10px;
         opacity: .8;
+        color:black;
     }
     
 
@@ -67,31 +71,7 @@ header {
 
 
 
-nav {
-    /*background-color: blue;*/
-    margin: 20px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-}
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    /*background-color: #f1f1f1;*/
-}
-
-nav li {
-    display: inline;
-    margin-right: 10px;
-    /*background-color: pink;*/
-}
-nav li img {
-    width: 40px; 
-    height: 40px; 
-    margin: 0px; 
-    
-}
 a {
     text-decoration: none;
     color: aliceblue;
@@ -140,8 +120,8 @@ a:hover {
     padding: 20px;
     max-width: 40%;
     text-align: center;
-    border-radius: 10%;
-    border: 5px solid black;
+    border-radius: 2%;
+  
 
 }
 .skills-container {
@@ -185,7 +165,7 @@ footer{
     }
 
     /* Stack navigation links */
-    .navigation {
+    nav{
         display: block;
         margin: 10px;
         text-align: center;
