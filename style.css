@@ -5,24 +5,41 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
-header img{
+nav {
+    background-color: rgba(189, 216, 243, 0.696);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+}
+
+nav a {
+ 
+    color: whitesmoke;
+    margin: auto;
+}
+
+.nav-link {
+    font-size: 30px;
+    color: whitesmoke;
+    margin: auto;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: whitesmoke; 
+}
+
+header{
   
     width:100%;
-    object-fit: cover;
     align-items: center;
-    color: black;
     margin: 20px auto;
     text-align: center;
-}
-nav{
-    color: aliceblue;
-    margin: 20px;
-    text-align: center;
-    display: inline;
-    margin-right: 10px;
-    opacity: .8;
-    color:black;
 }
     
 
@@ -37,14 +54,14 @@ nav{
 }
 
 .sectionOne {
-    width:75%;
+    width:60%;
     background-color:rgba(77, 170, 191,0.8);
     border-radius: 2%;
     margin: auto;
    
 }
 .sectionTwo{
-    width: 75%;
+    width: 60%;
     background-color:rgba(243, 49, 146, 0.8);
     border-radius: 2%;
     margin: auto;
@@ -103,9 +120,14 @@ nav{
 
 .examples{
     color:aliceblue;
-    font-size: 25px;;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    text-align: center;
 }
-
+.examples img{
+    max-width: 20%;
+}
 
 a {
     text-decoration: none;
@@ -124,7 +146,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    border:5px solid #646363;
     margin:20px;
 }
 
@@ -145,8 +166,8 @@ a:hover {
 }
 
 .new-skills {
-    opacity: .8;
-    background-color: aliceblue;
+
+    background-color: rgba(173, 240, 215, 0.8);
     margin:10% auto;
     padding: 20px;
     max-width: 40%;
@@ -179,96 +200,118 @@ a:hover {
     margin-bottom: 10%;
 }
 .foot{
-    font-size: 25px;
+    background-color: pink;
     text-align: center;
-    color: aliceblue;
 }
 footer{
-    font-size: 25px;
-    text-align: center;
-    color: aliceblue;
+    background-color: aquamarine;
+    display: flex;
+    
 }
-@media only screen and (max-width: 768px) {
-    /* Reset styles for header */
-    header {
-        text-align: center;
-        margin: 10px;
-    }
-
-    /* Stack navigation links */
-    nav{
-        display: block;
-        margin: 10px;
-        text-align: center;
-    }
-
-    /* Adjust styling for the chef image */
-    .chef {
-        margin: 0 auto; /* Center the image in mobile view */
-        max-width: 100%; /* Make the image responsive */
-    }
-
-    /* Adjust styling for the container */
-    .container {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-    }
-
-    .sectionTwo {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-    }
-
-    /* Adjust styling for paragraphs */
-    .paragraph {
-        margin: 25px;
-        font-size: 20px; /* Decrease font size for better readability on small screens */
-    }
-
-    /* Stack work examples navigation */
-    #workexamples ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Adjust styling for resume section */
-    #pdf {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #pdf object {
-        max-width: 100%;
-    }
-
-    #pdf p {
-        max-width: 100%;
-    }
-
-    /* Adjust styling for skills section */
-    .new-skills {
-        max-width: 50%; /* Make the container full-width */
-    }
-
-    .skills-container {
-        flex-direction: column; /* Stack skills vertically */
-        align-items: center; /* Center skills horizontally */
-    }
-
-    .new-skills li {
-        /* Make skills full-width */
-        display: block;
-    }
-
-    .new-skills li img {
-        margin-left: 0; /* Reset margin for images */
-        width: 20%; /* Adjust image size for better visibility */
-        margin-bottom: 5%; /* Adjust margin for better spacing */
-    }
-    .brush-background {
-        margin: 10px;
-        padding: 10px;
-    }
-
-
+footer img{
+    max-width: 5%;
+    margin: 10px;
 }
+
+@media (max-width: 767px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+      }
+
+      nav a {
+        margin: 10px auto;
+        width: 100%; 
+      }
+      .welcome-container {
+        text-align: center;
+      }
+
+      .neon-welcome {
+        max-width: 100%; 
+        height: auto; 
+      }
+
+        header img{
+            max-width: 100%; 
+            height: auto
+        }
+    
+        .sectionOne, .sectionTwo {
+            
+            width:90%;
+            margin: auto;       
+            
+        }
+        .pic, .pic2 {
+            max-width: 100%; 
+            float: none; 
+            margin: 0px auto; 
+        }
+    
+        .shapeWrap, .shapeWrapTwo {
+            justify-content: center; 
+        }
+    
+        #shape1, #shape2 {
+            max-width: 50%;
+        }
+    
+        .examples {
+            font-size: 20px;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+        }
+    
+        .examples img {
+            max-width: 15%;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+    
+        #pdf {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 90%;
+            margin: 20px auto;
+        }
+    
+        #pdf object {
+            max-width: 100%;
+        }
+    
+        #pdf p {
+            max-width: 100%;
+            margin: 20px;
+            font-size: 20px;
+        }
+    
+        .new-skills {
+            max-width: 80%;
+        }
+    
+        .new-skills li {
+            flex: 0 0 100%;
+        }
+    
+        .new-skills li img {
+            width: 20%;
+            margin-left: auto;
+            margin-bottom: 10%;
+        }
+    
+        footer img {
+            max-width: 10%;
+            margin: 10px;
+        }
+        .foot{
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+        }
+       
+    }

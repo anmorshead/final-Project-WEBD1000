@@ -3,59 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="A.png">
     <link rel="stylesheet" href="style.css">
     <title>Andrea Morshead's Portfolio</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About Me</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#workexamples">Work Examples</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">New Skills</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="navbar">
+        
+            <a class="nav-link" href="#about-me">About Me</a>
+            <a class="nav-link" href="#workexamples">Work Examples</a>
+            <a class="nav-link" href="#resume">Resume</a>
+            <a class="nav-link" href="#skills">New Skills</a>
+            <a class="nav-link" href="/contact/contact.html">Contact</a>
+        
     </nav>
 
 
     <header>
-        <img src="welcome.png">
+        <div class="welcome-container">
+        <img src="neonwelcome.png">
+        </div>
     </header>
    
     
@@ -89,7 +56,7 @@
     </div>
 
 <div class="sectionTwo">    
-    <img class="pic2" src="chef.jpg" >
+    <img class="pic2" src="profile.jpg" >
     <div class="paragraph2">
         <p>
             Growing up in Halifax, I always knew I wanted a 
@@ -112,22 +79,22 @@
     <img id="shape2" src="shapes.png">
     </div>
 
-    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
         <div id="workexamples">
         <h2 class="brush-background">Work Examples in Website Design:</h2>
         
         </div>
     
         <br><br><br><Br><br><br>
-    <nav>
-        <ul class="examples">
-            <li><a href="love-connection/exercise2.html" target="_blank"> <img src="web.png">Dating Website</a></li>
-            <li><a href="nikola-tesla/NT.html" target="_blank"> <img src="web.png">Nikola Tesla</a></li>
-            <li><a href="countries/index.html" target="_blank"> <img src="web.png">Country info page</a></li>
+  
+        <div class="examples">
+            <a href="love-connection/exercise2.html" target="_blank"> <img src="icecream.png">Dating Website</a>
+            <a href="nikola-tesla/NT.html" target="_blank"> <img src="neon-light.png">Nikola Tesla</a>
+            <a href="countries/index.html" target="_blank"> <img src="compas.png">Country Info Page</a>
             
         
-        </ul>
-    </nav>
+        </div>
+ 
     <br><br><br><br><br><br><br><br><br>
    
     <h2 class="brush-background">Resume</h2>
@@ -164,15 +131,15 @@
 <div class="foot">
     <h4>Contact</h4>
     <footer>
-        <p> Phone: <a href="tel: +19024898828"> 902-489-8828</a>
-            | Email: <a href="mailto:andrea.morshead@gmail.com">andrea.morshead@gmail.com</a>
-            | <address>NSCC-IT Campus</address>
-        </p>
+        <div class="footer"> <img src="neon-phone.png"> <a href="tel: +19024898828"> 902-489-8828</a>
+             <img src="neon-mail.png"> <a href="mailto:andrea.morshead@gmail.com">andrea.morshead@gmail.com</a>
+             <img src="neon-location.png"><address>NSCC-IT Campus</address>
+        </div>
        
         &copy; Andrea Morshead | 2023
     </footer>
 </div>
 <br><br><br>
-    
+
 </body>
 </html>
