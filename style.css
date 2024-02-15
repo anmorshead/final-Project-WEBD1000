@@ -140,31 +140,22 @@ a:hover {
 
 
 #pdf {
-    opacity: .8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
     margin:20px;
 }
 
 #pdf object {
-    max-width: 50%;
+    max-width: 80%;
+    height:1000px;
 }
 
-#pdf p {
-    flex: 1;
-    color: black;
-    max-width: 50%;
-    margin:20px;
-    font-size: 25px;
-}
 #skills{
     margin:20px;
    
 }
-
 .new-skills {
 
     background-color: rgba(173, 240, 215, 0.8);
@@ -199,17 +190,27 @@ a:hover {
     width:10%;
     margin-bottom: 10%;
 }
-.foot{
-    background-color: pink;
+.foot {
+    color:whitesmoke;
+    font-size: 30px;
     text-align: center;
 }
-footer{
-    background-color: aquamarine;
+
+.footer {
     display: flex;
-    
+    justify-content: space-around;
+    align-items: center;
 }
-footer img{
-    max-width: 5%;
+
+.footer div {
+    font-size: 25px;
+    color:whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    max-width: 15%;
     margin: 10px;
 }
 
@@ -259,7 +260,7 @@ footer img{
         }
     
         .examples {
-            font-size: 20px;
+            font-size: 30px;
             flex-direction: column;
             text-align: center;
             margin: auto;
@@ -282,12 +283,7 @@ footer img{
     
         #pdf object {
             max-width: 100%;
-        }
-    
-        #pdf p {
-            max-width: 100%;
-            margin: 20px;
-            font-size: 20px;
+            height:400px;
         }
     
         .new-skills {
@@ -304,14 +300,19 @@ footer img{
             margin-bottom: 10%;
         }
     
-        footer img {
-            max-width: 10%;
-            margin: 10px;
-        }
-        .foot{
+        footer{
+            width:85%;
+            font-size: 30px;
             flex-direction: column;
             text-align: center;
             margin: auto;
+        }
+    
+        footer img {
+            max-width: 15%;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px auto;
         }
        
     }
