@@ -215,6 +215,12 @@ footer img {
 }
 
 @media (max-width: 767px) {
+    body{
+      background-size:auto;
+      background-position: center center;
+      background-repeat: repeat;
+
+    }
       nav {
         flex-direction: column;
         text-align: center;

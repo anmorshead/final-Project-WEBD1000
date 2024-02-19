@@ -27,3 +27,19 @@ body {
     text-align: center; 
 
 }
+@media only screen and (max-width: 600px) {
+    .image-container {
+        flex-wrap: wrap; 
+    }
+
+   
+    .image-container img {
+        width: calc(20% - 10px);  
+        margin: 5px; 
+    }
+}
+
+.hands {
+    width: 100%;
+    text-align: center; 
+}
