@@ -1,0 +1,61 @@
+@import "variables";
+
+@mixin elementSizing($width:100px, $height:auto, $margin:auto){
+  width:$width;
+  height:$height;
+  margin: $margin;
+}
+@mixin flexContainer{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+body{
+  background-image: url("images/clouds.jpg");
+  font-family:$fontFamily;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.mainPage{
+  @include elementSizing(90%,fit-content );
+  background-color:$pageColor;
+  text-align: center;
+  border: 1px solid $pageColor;
+  border-radius: 5%;
+}
+.welcome{
+  padding: 20px;
+  margin: 50px;
+}
+.banner, .chartCreation {
+  @include flexContainer;
+}
+h1{
+  font-size: $h1;
+}
+.sun,.snow{
+  @include elementSizing(height,width);
+}
+h3{
+  font-size: $h3;
+}
+.locationDropDown, .weatherDropDown{
+  font-size: $dropDown;
+}
+.weatherDropDown{
+  text-align: center;
+  width:33%;
+  align-self: flex-start;
+}
+.chart{
+  @include elementSizing(66%,auto);
+}
+footer{
+  font-size: $footer;
+  margin-top: 80%;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}

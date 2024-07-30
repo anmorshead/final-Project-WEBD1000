@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Week</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"defer ></script>
+    <script src="node_modules/chart.js/dist/chart.umd.js"></script> <!--script for chart.js -->
+</head>
+<body>
+    <div class="mainPage">
+    <div  class="welcome" class="centered">
+        <div class="banner">
+            <img class="sun" src="images/sun.gif">
+            <h1>Weather Week</h1>
+            <img class="snow"src="images/snowman.gif">
+        </div>
+        <h3>Plan your Week around the Weather</h3>
+        <div class="locationDropDown">  <form>
+            <label for="location">Showing Weather For :</label>
+            <select name="location" id="location">
+                <option value="none" selected disabled hidden>Select an Option</option>
+                <option value="halifax">Halifax</option>
+                <option value="fredericton">Fredericton</option>
+                <option value="toronto">Toronto</option>
+                <option value="charlottetown">Charlottetown</option>
+                <option value="stjohns">St. John's</option>
+                <option value="montreal">Montreal</option>
+                
+            </select>
+        </form>
+        </div>
+    </div>
+    <div class="chartCreation">
+        <div class="weatherDropDown">
+            <form>
+                <p>Select Weather Type to View :</p>
+                <select name="weather" id="weatherType">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option value="cloudCover">% Cloud Cover</option>
+                    <option value="precipitation">% Chance of Rain</option>
+                    <option value="humidity">% Relative Humidity</option>
+                    <option value="uvIndex">UV Index(0-11)</option>
+                    <option value="windSpeed">Wind Speed (km/h)</option>
+                    <option value="highTemp">High Temperature(°Celcius)</option>
+                    
+                </select>
+            </form>
+        </div>
+        <div class="chart">
+            <canvas id="myChart"></canvas> <!-- Create a canvas element for the chart -->
+        </div>
+    </div>
+    <footer class="centered">
+        <p>&copy; 2024 Andrea Morshead</p>
+    </footer>
+    </div>
+</body>
+</html>
